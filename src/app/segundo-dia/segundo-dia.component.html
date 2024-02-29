@@ -17,24 +17,33 @@
 </div>
 <table class="table">
     <thead>
-    <tr>
-    
-    <th scope="co1">nombre</th>
-    <th scope="co1">Descripcion</th>
-    
-    </tr>
-    
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
     </thead>
     <tbody>
-    
-    <tr *ngFor="let itemuser of user">
-    <th>{{itemuser.name}}</th>
-    <th>{{itemuser.descripcion}}</th>
-    </tr>
-    
+      <tr>
+        <th scope="row">1</th>
+        <td>{{name}}</td>
+        <td>{{name}}</td>
+        <td>{{name}}</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>{{description}}</td>
+        <td>{{description}}</td>
+        <td>{{description}}</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">nombres</td>
+        <td>holaa</td>
+      </tr>
     </tbody>
-        
-    </table>
+  </table>
 
 
 
@@ -59,4 +68,3 @@
 
 
     </form>
-    hola mundo
