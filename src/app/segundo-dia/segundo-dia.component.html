@@ -1,0 +1,61 @@
+<p>segundo-dia works!</p>
+<button class="btn btn-btn-primary" (click)="clickButton('hola')">cambio</button>
+
+
+
+<h3>Botones usando el ngif</h3>
+
+<div *ngIf="variable === 'hola'"> {{variable}}</div>
+
+<div *ngFor="let itemuser of user">
+    <ol>
+
+        <li>{{itemuser.name}} </li>
+        <li>{{itemuser.descripcion}} </li>
+
+    </ol>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+    
+    <th scope="co1">nombre</th>
+    <th scope="co1">Descripcion</th>
+    
+    </tr>
+    
+    </thead>
+    <tbody>
+    
+    <tr *ngFor="let itemuser of user">
+    <th>{{itemuser.name}}</th>
+    <th>{{itemuser.descripcion}}</th>
+    </tr>
+    
+    </tbody>
+        
+    </table>
+
+
+
+
+    <h1>INPUTS</h1>
+    <span>Name</span>
+    <input type="text" class="form.control" [(ngModel)]="name">
+    <span>Description</span>
+    <input type="text" class="form.control" [(ngModel)]="description">
+    
+    {{name}}
+    {{description}}
+
+    <form [formGroup]="formulariouser">
+        <span>Name</span>
+        <input type="text" class="form.control" formControlName="name">
+        <span>Description</span>
+        <input type="text" class="form.control" formControlName="description">
+        <button class = "btn btn-primary" (click)="submitForm()">
+
+        </button>
+
+
+    </form>
